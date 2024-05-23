@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fila.css">
+    <title>Atendimento Médico</title>
+</head>
+<body>
+    
+        <header>        
+            <nav>
+                <ul>
+                    <button id="btn-Sobre">Sobre a Unimed </button>
+                    <button id="btn-Fale">Fale conosco</button>
+                    <button id="btn-Informacao">Acesso a Informação</button>
+                    <button id="btn-Voltar">Sair</button>
+                                   
+                </ul>
+            </nav>
+        </header>
+    
+    
+    <main>
+       
+       <div class="container-fluid">
+       <div class="row">
+       <h1>UNIMED - Atendimento </h1>
+       <form id="Form">
+       <p>
+        <label for="fullName">Nome completo</label>
+        <input type="text" id="Name" class="form-control" required>
+       </p>
+       <p>
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" class="form-control" required>
+       </p>
+       <p>
+        <label for="tipo">Tipo de plano e atendimento</label>
+        <select id="tipo" name="tipo">
+        <option value="particular">Particular</option>
+        <option value="flex">Flex</option>
+        <option value="max">Plano Max</option>
+        <option value="diamante">Plano Diamante</option>
+        <option value="gold">Plano Gold</option>
+        <option value="empresarial">Empresarial</option>   
+    
+        </select>
+        <button type="button" onclick="mensagem()">Selecionar</button>
+       </p>
+       <p id="mostrar"></p>
+       <p>  
+        <label for="priori">Prioridade:</label>
+        <select id="priori" class="form-control">
+         <option value="verde">Verde - Normal </option>
+         <option value="amarelo">Amarelo - Urgente </option>
+         <option value="vermelho">Vermelho - Emergência</option>
+         
+        </select>
+       </p>
+       <p>
+        <input type="submit" value="Adicionar à fila" class="btn btn-primary">
+        <input type="button" value="Executar Atendimento" id="btnExecute" class="btn btn-danger">
+       </p>
+       <h3>Total pacientes na fila : <span id="Length">0</span></h3>
+       <p class="bg-danger">Paciente em atendimento:</p>
+       <h4 id="Cust"></h4>
+    </main>
+    
+       <script>
+        // Adicionando funcionalidade ao botão de login
+        document.getElementById("btn-Sobre").addEventListener("click", function() {
+            // Redirecionar para a página de login quando o botão é clicado
+            window.location.href = "sobreunimed.html";
+        });
+    </script>
+    <script>
+        // Adicionando funcionalidade ao botão de login
+        document.getElementById("btn-Fale").addEventListener("click", function() {
+            // Redirecionar para a página de login quando o botão é clicado
+            window.location.href = "faleconosco.html";
+        });
+    </script>
+    <script>
+        // Adicionando funcionalidade ao botão de login
+        document.getElementById("btn-Informacao").addEventListener("click", function() {
+            // Redirecionar para a página de login quando o botão é clicado
+            window.location.href = "informacao.html";
+        });
+    </script>
+      <script>
+        // Adicionando funcionalidade ao botão de login
+        document.getElementById("btn-Voltar").addEventListener("click", function() {
+            // Redirecionar para a página de login quando o botão é clicado
+            window.location.href = "login.html";
+        });
+    </script>
+    
+    
+       </form>
+       </div>
+       </div>
+    
+    
+    
+   <footer>
+    <p>&copy; 2024 UNIMED - Todos os direitos reservados - Atendimento 4020-4020 </p>
+   </footer>
+   <script src="fila.js"></script>
+   </body>
+   </html>

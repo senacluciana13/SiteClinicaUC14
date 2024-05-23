@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('imgvacinacao.png'); /* Substitua 'background.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+   
+}
+#btn-Voltar {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para hover e active */
+    display: inline-block; /* Para garantir o comportamento de botão */
+    margin-top: 10px; /* Margem superior */
+}
+
+#btn-Voltar:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.container-fuid{
+    margin: 10px;
+}
+.row{
+    text-align: center;
+}
+h1,h2{
+    color: green;
+    text-align: center;
+    
+}
+form{
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,);
+    margin: 5px;
+
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+    
+}
+input[type="text"]{
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1 px solid forestgreen;
+    border-radius: 4px;
+}
+.btn-primary{
+    background-color: green;
+    color: #fff;
+    border: none;
+}
+.btn-danger{
+    background-color: green;
+    color: #fff;
+    border:none;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.bg-danger{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
